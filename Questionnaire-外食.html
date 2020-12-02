@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>外食調查</title>
+
+    <link rel="stylesheet" href="Questionnaire-外食.css">
+
+</head>
+<!--參考檔案 https://www.surveycake.com/s/jNkkE -->
+
+<body>
+
+    <main>
+        <div class="head">
+            <div class="headimg">
+                <img src="./img/header.jpg" alt="">
+            </div>
+            <h1>外食行為調查_Template</h1>
+        </div>
+
+        <form action="#">
+            <section>
+
+                <h2>基本資料</h2>
+                <article>
+                    <p>您的性別</p>
+                    <ul>
+                        <il class="boyimg">
+                            <label for="male">
+                                <img src="./img/boy.jpg" alt=""></label>
+                            <input id="male" type="radio" name="gender" value="male">男
+                        </il>
+                        <il class="girlimg">
+                            <label for="female">
+                                <img src="./img/girl.jpg" alt="">
+                            </label>
+                            <input id="female" type="radio" name="gender" value="female">女
+                        </il>
+                    </ul>
+                </article>
+                <article>
+                    <p>您的年齡</p>
+                    <select name="age" id="age">
+                        <option value="choose-age" selected>請選擇年齡</option>
+                        <!-- selected是預設選項設定 -->
+                        <option value="15down">15歲以下</option>
+                        <option value="15~20">15~20歲</option>
+                        <option value="21~25">21~25歲</option>
+                        <option value="26~30">26~30歲</option>
+                        <option value="31~35">31~35歲</option>
+                        <option value="36~40">36~40歲</option>
+                        <option value="41~45">41~45歲</option>
+                        <option value="46~50">46~50歲</option>
+                        <option value="51~55">51~55歲</option>
+                        <option value="56~60">56~60歲</option>
+                        <option value="61~65">61~65歲</option>
+                        <option value="65up">65歲以上</option>
+                        </label>
+                    </select>
+
+                </article>
+                <article>
+                    <p>您居住的區域</p>
+
+                    <select name="area" id="">
+                        <option value="north">北部</option>
+                        <option value="central">中部</option>
+                        <option value="south">南部</option>
+                        <option value="east">東部</option>
+                        <option value="outer-island">外島</option>
+                        <option value="other">其他</option>
+                    </select>
+
+                </article>
+                <article>
+                    <p>您的職業類別</p>
+                    <ul>
+                        <li>
+                            <label for="ManageFinance">
+                                <input id="ManageFinance" type="radio" name="occupation" value=""> 管理財經
+                            </label>
+                        </li>
+                        <li>
+                            <label for="Marketingbusiness">
+                                <input id="Marketingbusiness" type="radio" name="occupation" value=""> 行銷業務
+                            </label>
+                        </li>
+                        <li>
+                            <label for="CustomerSupport">
+                                <input id="CustomerSupport" type="radio" name="occupation" value=""> 客服支援
+                            </label>
+                        </li>
+                        <li>
+                            <label for="ManufacturingEngineering">
+                                <input id="ManufacturingEngineering" type="radio" name="occupation" value=""> 製造工程
+                            </label>
+                        </li>
+                        <li>
+                            <label for="Educationcommunication">
+                                <input id="Educationcommunication" type="radio" name="occupation" value=""> 教育傳播
+                            </label>
+                        </li>
+                        <li>
+                            <label for="Othermajors">
+                                <input id="Othermajors" type="radio" name="occupation" value=""> 其他專業
+                            </label>
+                        </li>
+                    </ul>
+
+                </article>
+            </section>
+            <section>
+                <h2>用餐行為</h2>
+                <article>
+                    <p>您平均外食頻率為？</p>
+                    <ul>
+
+                        <li>
+                            <label for="Hardlyeatout">
+                                <input id="Hardlyeatout" type="radio" name="eating-out" value=""> 幾乎不外食
+                            </label>
+                        </li>
+
+                        <li>
+                            <label for="1meal">
+                                <input id="1meal" type="radio" name="eating-out" value=""> 平均 1 餐
+                            </label>
+                        </li>
+
+                        <li>
+                            <label for="2meal">
+                                <input id="2meal" type="radio" name="eating-out" value=""> 每天 2 餐
+                            </label>
+                        </li>
+
+                        <li>
+                            <label for="3mealup">
+                                <input id="3mealup" type="radio" name="eating-out" value=""> 每天 3 餐以上
+                            </label>
+                        </li>
+                    </ul>
+                </article>
+                <article>
+                    <p>您平均一餐消費金額為？</p>
+                    <input type="range" min="0" max="2000" name="" id="">
+                    <!-- 滾輪 -->
+                </article>
+            </section>
+            <section>
+                <h2>消費行為</h2>
+                <article>
+                    <p>下列因素中，促使您決定餐廳的影響程度</p>
+                    <table style="width: 500px;">
+
+                        <tr>
+                            <th>項目</th>
+                            <th>很小</th>
+                            <th>小</th>
+                            <th>中</th>
+                            <th>大</th>
+                            <th>很大</th>
+                        </tr>
+                        <tr>
+                            <td>工作應酬</td>
+                            <td> <input type="radio" name="works" value="Verysmall"> </td>
+                            <td> <input type="radio" name="works" value="small"></td>
+                            <td> <input type="radio" name="works" value="middle"></td>
+                            <td> <input type="radio" name="works" value="Big"></td>
+                            <td> <input type="radio" name="works" value="Verybig"></td>
+                        </tr>
+                        <tr>
+                            <td>網路評價</td>
+                            <td> <input type="radio" name="InternetEvaluation" value="Verysmall"> </td>
+                            <td> <input type="radio" name="InternetEvaluation" value="small"></td>
+                            <td> <input type="radio" name="InternetEvaluation" value="middle"></td>
+                            <td> <input type="radio" name="InternetEvaluation" value="Big"></td>
+                            <td> <input type="radio" name="InternetEvaluation" value="Verybig"></td>
+                        </tr>
+                        <tr>
+                            <td>流行趨勢</td>
+                            <td> <input type="radio" name="trend" value="Verysmall"> </td>
+                            <td> <input type="radio" name="trend" value="small"></td>
+                            <td> <input type="radio" name="trend" value="middle"></td>
+                            <td> <input type="radio" name="trend" value="Big"></td>
+                            <td> <input type="radio" name="trend" value="Verybig"></td>
+                        </tr>
+                        <tr>
+                            <td>折價優惠</td>
+                            <td> <input type="radio" name="Discount" value="Verysmall"> </td>
+                            <td> <input type="radio" name="Discount" value="small"></td>
+                            <td> <input type="radio" name="Discount" value="middle"></td>
+                            <td> <input type="radio" name="Discount" value="Big"></td>
+                            <td> <input type="radio" name="Discount" value="Verybig"></td>
+                        </tr>
+                        <tr>
+                            <td>擁有會員</td>
+                            <td> <input type="radio" name="Havemembers" value="Verysmall"> </td>
+                            <td> <input type="radio" name="Havemembers" value="small"></td>
+                            <td> <input type="radio" name="Havemembers" value="middle"></td>
+                            <td> <input type="radio" name="Havemembers" value="Big"></td>
+                            <td> <input type="radio" name="Havemembers" value="Verybig"></td>
+                        </tr>
+
+                    </table>
+
+
+                </article>
+                <article>
+                    <p>您平時取得餐廳資訊的管道？</p>
+                    <p>複選</p>
+                    <ul>
+                        <li>
+                            <label for="catering-app">
+                                <input id="catering-app" type="checkbox" name="Get information" value="catering-app">餐飲相關 APP
+                            </label>
+                        </li>
+
+                        <li>
+                            <label for="blogger">
+                                <input id="blogger" type="checkbox" name="Get information" value="blogger">部落客分享
+                            </label>
+                        </li>
+
+                        <li>
+                            <label for="search-engine">
+                                <input id="search-engine" type="checkbox" name="Get information" value="search-engine">搜尋引擎（Google/Yahoo）
+                            </label>
+                        </li>
+
+                        <li>
+                            <label for="social-platform">
+                                <input id="social-platform" type="checkbox" name="GetInformation" value="social-platform">社群平台（Facebook/Instagram）
+                            </label>
+                        </li>
+
+                        <li>
+                            <label for="flyer">
+                                <input id="flyer" type="checkbox" name="Get information" value="flyer">線下傳單發放
+                            </label>
+                        </li>
+
+                        <li>
+                            <label for="other">
+                                <input id="other" type="checkbox" name="Get information" value="other">其他
+                            </label>
+                        </li>
+                    </ul>
+                </article>
+            </section>
+            <input class="mybutton" type="button" value="送出">
+        </form>
+    </main>
+
+    <footer>
+        <!-- logo位置 -->
+    </footer>
+
+
+</body>
+
+</html>

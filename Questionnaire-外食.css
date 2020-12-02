@@ -1,0 +1,66 @@
+*{
+    color: #EF7D00; 
+}
+ul>li{
+    list-style:none;
+}
+/* border: 1px solid #EF7D00 ; */
+    /* object-fit: contain; */
+.headimg>img {
+    width: 626px;
+}
+.head{
+    background-color: #fff;
+}
+
+body{
+    background-color: #ef7b001f;
+}
+main{
+    background-color: #fff;
+    width:626px;
+    margin: auto;
+}
+
+h1,h2{
+    margin-bottom: 30px;
+    padding-left: 16px;
+}
+article{
+    padding: 0px 16px 30px;
+}
+
+label{   
+    cursor: pointer;
+}
+/* .girlimg, .boyimg{
+    border: 1px solid #ef7b00 ;
+} */
+.girlimg img, .boyimg img{
+width: 200px;
+}
+article>p{
+    font-size: 16px;
+    font-weight: 600;
+}
+th,td{
+    text-align: center;
+}
+
+.mybutton{
+    width: 626px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #ef7b001f;
+    border: #EF7D00 1px solid;
+    cursor: pointer;
+    text-align: center;
+}
+.mybutton:hover{
+    background-color: #ef7b0098;
+    color: #fff;
+}
+.mybutton:active{
+    font-size: 22px;
+}
